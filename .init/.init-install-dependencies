@@ -1,0 +1,4 @@
+{
+    "command": "./gradlew dependencies",
+    "working_directory": "/home/kavia/workspace/code-generation/smart-personal-assistant-178449-178459/android_flutter_frontend"
+}
