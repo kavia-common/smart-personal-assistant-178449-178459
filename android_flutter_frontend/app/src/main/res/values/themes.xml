@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base app theme with Ocean Professional colors -->
+    <style name="Theme.OceanProfessional" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/op_primary</item>
+        <item name="colorPrimaryVariant">@color/op_primary</item>
+        <item name="colorSecondary">@color/op_secondary</item>
+        <item name="colorError">@color/op_error</item>
+
+        <item name="android:colorBackground">@color/op_background</item>
+        <item name="colorSurface">@color/op_surface</item>
+        <item name="android:textColor">@color/op_text</item>
+
+        <item name="android:statusBarColor">@color/op_primary</item>
+        <item name="android:navigationBarColor">@color/op_surface</item>
+
+        <!-- Widget theming -->
+        <item name="bottomNavigationStyle">@style/Widget.OceanProfessional.BottomNavigationView</item>
+        <item name="materialCardViewStyle">@style/Widget.OceanProfessional.CardView</item>
+    </style>
+
+    <style name="Widget.OceanProfessional.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemIconTint">@color/op_text</item>
+        <item name="itemTextColor">@color/op_text</item>
+        <item name="backgroundTint">@color/op_surface</item>
+    </style>
+
+    <style name="Widget.OceanProfessional.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/op_surface</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardElevation">4dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.Medium</item>
+    </style>
+
+</resources>
