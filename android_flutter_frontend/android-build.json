@@ -1,0 +1,5 @@
+{
+  "gradle_wrapper": "gradlew",
+  "default_build_task": ":app:assembleDebug",
+  "notes": "Run from this directory. Example: ./gradlew :app:assembleDebug"
+}

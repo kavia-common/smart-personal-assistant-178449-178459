@@ -1,0 +1,10 @@
+{
+  "project_root": ".",
+  "modules": [
+    {"name": ":app", "path": "app"},
+    {"name": ":utilities", "path": "utilities"},
+    {"name": ":list", "path": "list"}
+  ],
+  "settings_file": "settings.gradle.dcl",
+  "wrapper": "gradlew"
+}

@@ -1,0 +1,5 @@
+project_root=smart-personal-assistant-178449-178459/android_flutter_frontend
+modules=app,list,utilities
+module_paths=smart-personal-assistant-178449-178459/android_flutter_frontend/app;smart-personal-assistant-178449-178459/android_flutter_frontend/list;smart-personal-assistant-178449-178459/android_flutter_frontend/utilities
+gradle_settings=settings.gradle.dcl
+notes=This project uses Gradle Declarative (.dcl) configuration files.

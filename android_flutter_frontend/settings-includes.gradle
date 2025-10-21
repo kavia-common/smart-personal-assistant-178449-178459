@@ -1,0 +1,9 @@
+//
+// Discovery-only settings file for tools that require a Groovy settings file.
+// Actual configuration lives in settings.gradle.dcl.
+//
+rootProject.name = "example-android-app"
+include(":app", ":utilities", ":list")
+project(":app").projectDir = file("app")
+project(":utilities").projectDir = file("utilities")
+project(":list").projectDir = file("list")

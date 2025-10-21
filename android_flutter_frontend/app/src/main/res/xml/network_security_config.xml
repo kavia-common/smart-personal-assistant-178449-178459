@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Development-only guidance: allow cleartext to localhost if needed for local testing.
+         Not referenced by manifest yet; safe placeholder for future use. -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+    </domain-config>
+</network-security-config>

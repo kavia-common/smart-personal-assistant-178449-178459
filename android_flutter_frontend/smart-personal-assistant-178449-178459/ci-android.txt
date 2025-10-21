@@ -1,0 +1,4 @@
+moduleRoot=android_flutter_frontend
+wrapper=./android_flutter_frontend/gradlew
+defaultTask=:app:assembleDebug
+notes=Gradle 9 Declarative DSL (.dcl). settings at android_flutter_frontend/settings.gradle.dcl

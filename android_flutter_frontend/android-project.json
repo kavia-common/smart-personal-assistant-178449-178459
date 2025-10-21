@@ -1,0 +1,6 @@
+{
+  "projectRoot": ".",
+  "settingsFile": "settings.gradle.dcl",
+  "modules": ["app", "list", "utilities"],
+  "notes": "Declarative Gradle DSL (.dcl). Use ./gradlew from this directory to build."
+}

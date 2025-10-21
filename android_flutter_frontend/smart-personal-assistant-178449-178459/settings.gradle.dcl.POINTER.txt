@@ -1,0 +1,12 @@
+This repository contains a nested Android Gradle (Declarative) project.
+
+Gradle project root:
+  smart-personal-assistant-178449-178459/android_flutter_frontend
+
+Primary settings file:
+  smart-personal-assistant-178449-178459/android_flutter_frontend/settings.gradle.dcl
+
+Build from repo root:
+  ./smart-personal-assistant-178449-178459/gradlew-android.sh build
+or
+  cd smart-personal-assistant-178449-178459/android_flutter_frontend && ./gradlew build

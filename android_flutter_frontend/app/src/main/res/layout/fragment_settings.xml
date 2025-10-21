@@ -1,29 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/op_background">
+    android:background="@color/op_background"
+    android:tag="test:settings_root">
 
     <LinearLayout
+        android:id="@+id/settings_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:tag="test:settings_container">
 
         <TextView
             android:id="@+id/settings_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings"
+            android:text="@string/title_settings"
             android:textStyle="bold"
             android:textSize="20sp"
+            android:accessibilityHeading="true"
             android:textColor="@color/op_text" />
 
         <TextView
+            android:id="@+id/settings_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Basic settings placeholder"
+            android:text="@string/settings_basic_subtitle"
             android:layout_marginTop="8dp"
+            android:textColor="@color/op_text"
+            android:contentDescription="@string/settings_basic_subtitle"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_open_permissions_center"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/title_permissions_center"
+            android:contentDescription="@string/nav_permissions_center" />
+
+        <TextView
+            android:id="@+id/permissions_center_cta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/settings_permissions_cta"
+            android:contentDescription="@string/settings_permissions_cta"
             android:textColor="@color/op_text"/>
+
+        <TextView
+            android:id="@+id/permissions_status_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:text="@string/settings_perm_status_header"
+            android:contentDescription="@string/settings_perm_status_header"
+            android:textColor="@color/op_text"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_open_system_settings"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/settings_open_system_settings"
+            android:contentDescription="@string/settings_open_system_settings" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_open_permissions_help"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/open_permissions_help"
+            android:contentDescription="@string/open_permissions_help" />
+
+        <TextView
+            android:id="@+id/permissions_status_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:text="@string/settings_perm_status_header"
+            android:contentDescription="@string/settings_perm_status_header"
+            android:textColor="@color/op_text"/>
+
+        <LinearLayout
+            android:id="@+id/permissions_status_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/perm_status_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_perm_location_label"
+                android:textColor="@color/op_text"/>
+
+            <TextView
+                android:id="@+id/perm_status_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_perm_media_label"
+                android:textColor="@color/op_text"/>
+
+            <TextView
+                android:id="@+id/perm_status_sms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_perm_sms_label"
+                android:textColor="@color/op_text"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/settings_permissions_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/op_text"
+            android:text="@string/permissions_sms_optional_note"
+            android:contentDescription="@string/permissions_sms_optional_note"/>
+
+        <TextView
+            android:id="@+id/settings_permissions_sms_explainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/op_text"
+            android:text="@string/permissions_sms_optin_explainer"/>
+
     </LinearLayout>
 </ScrollView>

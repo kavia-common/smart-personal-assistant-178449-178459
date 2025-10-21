@@ -1,0 +1,8 @@
+<!--
+This is a discovery-only manifest placed at the repository root for tools that
+attempt to detect an Android project by scanning for AndroidManifest.xml at the
+top level. The actual Android project resides under android_flutter_frontend/.
+See android_flutter_frontend/app/src/main/AndroidManifest.xml for the real manifest.
+-->
+<manifest package="org.example.redirect.to.actual.manifest">
+</manifest>

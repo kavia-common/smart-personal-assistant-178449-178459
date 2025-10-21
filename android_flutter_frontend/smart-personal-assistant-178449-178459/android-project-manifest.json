@@ -1,0 +1,16 @@
+{
+  "android": {
+    "projectRoot": "smart-personal-assistant-178449-178459/android_flutter_frontend",
+    "settingsFile": "smart-personal-assistant-178449-178459/android_flutter_frontend/settings.gradle.dcl",
+    "gradleWrapper": {
+      "unix": "smart-personal-assistant-178449-178459/android_flutter_frontend/gradlew",
+      "windows": "smart-personal-assistant-178449-178459/android_flutter_frontend/gradlew.bat"
+    },
+    "modules": [
+      ":app",
+      ":utilities",
+      ":list"
+    ],
+    "notes": "Nested Android Gradle project using Declarative DSL (Gradle 9). Use the projectRoot above as the Gradle root."
+  }
+}

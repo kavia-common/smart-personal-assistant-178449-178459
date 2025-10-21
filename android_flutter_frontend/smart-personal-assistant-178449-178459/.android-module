@@ -1,0 +1,4 @@
+root=android_flutter_frontend
+settings=android_flutter_frontend/settings.gradle.dcl
+wrapper=android_flutter_frontend/gradlew
+defaultTask=:app:assembleDebug

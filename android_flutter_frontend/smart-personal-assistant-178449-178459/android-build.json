@@ -1,0 +1,7 @@
+{
+  "project": "android",
+  "moduleRoot": "android_flutter_frontend",
+  "wrapper": "android_flutter_frontend/gradlew",
+  "defaultTask": ":app:assembleDebug",
+  "notes": "Run ./android_flutter_frontend/gradlew :app:assembleDebug from repo root or use ci-build-android.sh"
+}

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Proxy Gradle wrapper to the nested Android project.
+# This avoids CI/analyzers failing to detect the Android project root.
+set -euo pipefail
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR/android_flutter_frontend"
+exec ./gradlew "$@"

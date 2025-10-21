@@ -1,0 +1,4 @@
+project_root=smart-personal-assistant-178449-178459/android_flutter_frontend
+settings_file=smart-personal-assistant-178449-178459/android_flutter_frontend/settings.gradle.dcl
+wrapper_script=smart-personal-assistant-178449-178459/android_flutter_frontend/gradlew
+modules=app,list,utilities

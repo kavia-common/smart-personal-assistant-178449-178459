@@ -1,0 +1,16 @@
+{
+  "type": "android-project",
+  "moduleRoot": "android_flutter_frontend",
+  "gradleWrapper": "android_flutter_frontend/gradlew",
+  "settings": "android_flutter_frontend/settings.gradle.dcl",
+  "modules": [
+    "app",
+    "list",
+    "utilities"
+  ],
+  "build": {
+    "defaultTask": ":app:assembleDebug",
+    "script": "ci-build-android.sh"
+  },
+  "notes": "Declarative Gradle DSL (.dcl). Use the gradle wrapper under android_flutter_frontend."
+}

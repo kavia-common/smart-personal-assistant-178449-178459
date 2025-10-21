@@ -1,0 +1,13 @@
+{
+  "isAndroidGradleProjectRoot": true,
+  "settingsFile": "settings.gradle.dcl",
+  "wrapper": {
+    "unix": "./gradlew",
+    "windows": ".\\\\gradlew.bat"
+  },
+  "modules": [
+    ":app",
+    ":utilities",
+    ":list"
+  ]
+}

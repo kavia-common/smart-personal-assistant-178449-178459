@@ -1,0 +1,5 @@
+{
+  "androidGradleProjectRoot": "android_flutter_frontend",
+  "nestedLocator": "android_flutter_frontend/android-gradle-root.json",
+  "notes": "Use android_flutter_frontend as the Gradle project root."
+}

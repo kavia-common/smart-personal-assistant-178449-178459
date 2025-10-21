@@ -1,0 +1,4 @@
+# This repository contains a nested Android Gradle Declarative project.
+# Use the nested settings file below as the Gradle settings entry point.
+# Path from repository root:
+android_flutter_frontend/settings.gradle.dcl

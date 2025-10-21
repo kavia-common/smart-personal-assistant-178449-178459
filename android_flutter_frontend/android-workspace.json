@@ -1,0 +1,11 @@
+{
+  "android_project_root": "smart-personal-assistant-178449-178459/android_flutter_frontend",
+  "gradle_settings": "smart-personal-assistant-178449-178459/android_flutter_frontend/settings.gradle.dcl",
+  "gradle_wrapper": "smart-personal-assistant-178449-178459/android_flutter_frontend/gradlew",
+  "modules": [
+    "app",
+    "list",
+    "utilities"
+  ],
+  "notes": "This repository contains a nested Android project using Declarative Gradle (.dcl). Build from the module root or use the root ./gradlew shim."
+}

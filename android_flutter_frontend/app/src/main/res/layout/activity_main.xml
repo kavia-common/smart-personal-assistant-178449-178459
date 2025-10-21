@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@color/op_surface"
+        android:contentDescription="test:bottom_navigation"
         app:itemIconTint="@color/op_text"
         app:itemTextColor="@color/op_text"
         app:labelVisibilityMode="labeled"

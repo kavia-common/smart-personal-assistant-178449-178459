@@ -2,14 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/dashboardFragment"
-        android:title="Dashboard"
-        android:icon="@android:drawable/ic_menu_view" />
+        android:title="@string/title_dashboard"
+        android:icon="@android:drawable/ic_menu_view"
+        android:contentDescription="@string/title_dashboard" />
     <item
         android:id="@+id/insightsFragment"
-        android:title="Insights"
-        android:icon="@android:drawable/ic_menu_week" />
+        android:title="@string/title_insights"
+        android:icon="@android:drawable/ic_menu_week"
+        android:contentDescription="@string/title_insights" />
     <item
         android:id="@+id/settingsFragment"
-        android:title="Settings"
-        android:icon="@android:drawable/ic_menu_preferences" />
+        android:title="@string/title_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:contentDescription="@string/title_settings" />
+    <!-- Quick access to Permissions Center -->
+    <item
+        android:id="@+id/permissionsCenterFragment"
+        android:title="@string/title_permissions_center"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:visible="true"
+        android:contentDescription="@string/title_permissions_center" />
 </menu>

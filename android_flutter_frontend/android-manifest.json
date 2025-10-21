@@ -1,0 +1,5 @@
+{
+  "android_manifest": "smart-personal-assistant-178449-178459/android_flutter_frontend/app/src/main/AndroidManifest.xml",
+  "package": "org.example.app",
+  "notes": "The Android project root is smart-personal-assistant-178449-178459/android_flutter_frontend using Gradle Declarative settings."
+}

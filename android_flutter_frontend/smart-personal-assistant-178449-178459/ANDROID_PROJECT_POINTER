@@ -1,0 +1,5 @@
+# This repository hosts the Android project under android_flutter_frontend/
+ANDROID_PROJECT_ROOT=android_flutter_frontend
+GRADLE_WRAPPER=android_flutter_frontend/gradlew
+SETTINGS_FILE=android_flutter_frontend/settings.gradle.dcl
+PRIMARY_MODULE=:app

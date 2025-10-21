@@ -1,0 +1,7 @@
+{
+  "root": ".",
+  "gradleWrapper": "gradlew",
+  "settingsFile": "settings.gradle.dcl",
+  "defaultTask": ":app:assembleDebug",
+  "notes": "This is the Android Gradle project root (Declarative DSL). Use the wrapper here."
+}

@@ -1,0 +1,9 @@
+{
+  "androidProjectRoot": "./android_flutter_frontend",
+  "gradleSettingsFile": "./android_flutter_frontend/settings.gradle.dcl",
+  "wrapper": {
+    "linux": "./gradlew-android.sh",
+    "windows": ".\\\\gradlew-android.sh"
+  },
+  "notes": "This repository contains a nested Android project under android_flutter_frontend. Tools should treat that directory as the Gradle project root."
+}

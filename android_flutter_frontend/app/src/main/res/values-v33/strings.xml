@@ -1,0 +1,4 @@
+<resources>
+    <!-- On Android 13+ we request granular media images permission -->
+    <string name="rationale_media_t">We analyze gallery images locally to surface insights on spend patterns, habits, and wellness. On Android 13+, we only request Images permission.</string>
+</resources>

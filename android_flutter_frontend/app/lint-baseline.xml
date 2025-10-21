@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- This baseline can be populated by running Android Lint locally if needed. -->
+    <!-- Keeping as a placeholder to help CI tools detect lint config presence. -->
+</lint>

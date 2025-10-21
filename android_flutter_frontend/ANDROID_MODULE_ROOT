@@ -1,0 +1,4 @@
+This file marks the Android module root for analyzers and CI.
+settings=./settings.gradle.dcl
+wrapper=./gradlew
+defaultTask=:app:assembleDebug

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Test-only overrides or additions (kept empty initially). -->
+    <!-- Example:
+    <string name="title_permissions_center">Permissions Center (Test)</string>
+    -->
+</resources>

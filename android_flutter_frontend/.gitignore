@@ -1,1 +1,30 @@
-.env
+# Gradle
+.gradle/
+build/
+**/build/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Android/OS
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Logs
+*.log
+
+# Keystores (do not commit real keys)
+*.jks
+*.keystore
+
+# Gradle wrapper caches (wrapper files are tracked separately)
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Misc
+.DS_Store

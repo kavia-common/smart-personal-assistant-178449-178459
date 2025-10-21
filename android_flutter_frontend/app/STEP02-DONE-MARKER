@@ -1,0 +1,5 @@
+permissions_center=true
+permissions_manager=true
+manifest_permissions=true
+shared_prefs_opt_in=true
+work_scheduler_stub=true

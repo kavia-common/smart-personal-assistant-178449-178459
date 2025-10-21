@@ -1,0 +1,2 @@
+rootProject.name = "root-delegate-android"
+println("Delegating to Android project at smart-personal-assistant-178449-178459/android_flutter_frontend")

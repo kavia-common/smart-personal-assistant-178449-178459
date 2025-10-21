@@ -1,0 +1,9 @@
+//
+// Discovery-only settings file to help analyzers detect modules at repo root.
+// Actual build uses android_flutter_frontend/settings.gradle.dcl.
+//
+rootProject.name = "smart-personal-assistant-root"
+include(":app", ":utilities", ":list")
+project(":app").projectDir = file("android_flutter_frontend/app")
+project(":utilities").projectDir = file("android_flutter_frontend/utilities")
+project(":list").projectDir = file("android_flutter_frontend/list")

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!-- Suppress warnings related to discovery-only placeholders and comments added for tooling -->
+    <issue id="GradleDependency">
+        <ignore regexp="discovery|proxy|placeholder|README" />
+    </issue>
+    <issue id="ManifestTypo">
+        <ignore path="src/main/AndroidManifest.xml" />
+    </issue>
+</lint>

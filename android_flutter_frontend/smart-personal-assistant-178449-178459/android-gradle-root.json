@@ -1,0 +1,9 @@
+{
+  "root": "android_flutter_frontend",
+  "settings": "android_flutter_frontend/settings.gradle.dcl",
+  "wrapper": {
+    "unix": "android_flutter_frontend/gradlew",
+    "windows": "android_flutter_frontend/gradlew.bat"
+  },
+  "notes": "Use the 'root' path as the Android Gradle project root for builds and analysis."
+}

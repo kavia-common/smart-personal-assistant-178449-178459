@@ -1,0 +1,8 @@
+{
+  "android": {
+    "root": "android_flutter_frontend",
+    "wrapper": "android_flutter_frontend/gradlew",
+    "settings": "android_flutter_frontend/settings.gradle.dcl",
+    "modules": [":app", ":utilities", ":list"]
+  }
+}

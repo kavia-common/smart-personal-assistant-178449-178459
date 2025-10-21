@@ -1,0 +1,5 @@
+Use the module Gradle wrapper to build:
+./gradlew :app:assembleDebug
+
+Settings file:
+./settings.gradle.dcl

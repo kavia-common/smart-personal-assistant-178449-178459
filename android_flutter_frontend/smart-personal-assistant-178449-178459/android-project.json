@@ -1,0 +1,7 @@
+{
+  "moduleRoot": "android_flutter_frontend",
+  "settingsFile": "android_flutter_frontend/settings.gradle.dcl",
+  "wrapper": "android_flutter_frontend/gradlew",
+  "defaultTask": ":app:assembleDebug",
+  "notes": "Gradle 9 Declarative DSL project. Build using the wrapper within android_flutter_frontend."
+}

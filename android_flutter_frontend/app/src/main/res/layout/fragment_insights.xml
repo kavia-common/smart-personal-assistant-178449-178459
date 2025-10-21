@@ -3,13 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/op_background"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:tag="test:insights_root">
 
     <TextView
         android:id="@+id/insights_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Insights placeholder"
+        android:text="@string/insights_placeholder"
         android:textColor="@color/op_text"
-        android:textSize="18sp"/>
+        android:textSize="18sp"
+        android:accessibilityHeading="true"/>
 </FrameLayout>

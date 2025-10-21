@@ -1,0 +1,3 @@
+# This directory is the Android Gradle project root for the app.
+# Use the wrapper here to build:
+#   ./gradlew build

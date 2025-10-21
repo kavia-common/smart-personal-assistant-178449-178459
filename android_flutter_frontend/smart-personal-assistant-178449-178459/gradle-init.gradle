@@ -1,0 +1,10 @@
+allprojects {
+    gradle.beforeProject {
+        if (rootDir.name == "smart-personal-assistant-178449-178459" && !file("android_flutter_frontend/settings.gradle.dcl").exists()) {
+            // No-op safeguard
+        }
+    }
+}
+gradle.buildFinished {
+    println("Gradle init script executed. If you are running from repo root, use ./android_flutter_frontend/gradlew :app:assembleDebug")
+}

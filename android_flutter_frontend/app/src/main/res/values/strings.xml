@@ -1,6 +1,127 @@
 <resources>
     <string name="app_name">Smart Personal Assistant</string>
     <string name="title_dashboard">Dashboard</string>
+    <string name="dashboard_permissions_hint">Tip: Visit the Permissions Center to enable Location and Media for the best experience.</string>
+    <string name="dashboard_welcome">Welcome! Ocean Professional theme is active.</string>
     <string name="title_insights">Insights</string>
+    <string name="insights_placeholder">Insights placeholder</string>
     <string name="title_settings">Settings</string>
+    <string name="settings_basic_subtitle">Basic settings placeholder</string>
+
+    <!-- Permissions Center -->
+    <string name="title_permissions_center">Permissions Center</string>
+    <string name="title_permissions_center_nav">Permissions Center</string>
+    <string name="nav_permissions_center">Permissions</string>
+    <string name="desc_permissions_center">Control and review app permissions for best experience.</string>
+    <string name="settings_permissions_cta">Manage app permissions in the Permissions Center.</string>
+    <string name="settings_perm_status_header">Current permission statuses</string>
+    <string name="settings_perm_status_header_short">Permissions</string>
+    <string name="settings_perm_location_label">Location</string>
+    <string name="settings_perm_media_label">Media</string>
+    <string name="settings_perm_sms_label">SMS (optional)</string>
+
+    <!-- Permission names -->
+    <string name="perm_location">Location</string>
+    <string name="perm_media">Media &amp; Gallery</string>
+    <string name="perm_sms">SMS (optional)</string>
+    <string name="perm_sms_header">SMS (optional)</string>
+
+    <!-- Permission statuses -->
+    <string name="status_granted">Granted</string>
+    <string name="status_denied">Denied</string>
+    <string name="status_denied_permanently">Denied (don&apos;t ask again)</string>
+    <string name="status_not_requested">Not requested</string>
+
+    <!-- Actions -->
+    <string name="action_request">Request</string>
+    <string name="action_open_settings">Open System Settings</string>
+    <string name="settings_open_system_settings">Open System Settings</string>
+    <string name="settings_perm_status_header">Permissions</string>
+    <string name="action_learn_more">Learn more</string>
+    <string name="cd_permissions_help_menu">Open permissions help</string>
+    <string name="title_permissions_help">Permissions help</string>
+    <string name="nav_permissions_help">Permissions Help</string>
+    <string name="open_permissions_help">Open Permissions Help</string>
+    <string name="permissions_help_body">You can manage permissions anytime from the Permissions Center or Android Settings. If a permission is permanently denied, use Open System Settings to grant it.</string>
+    <string name="action_manage">Manage</string>
+
+    <!-- Rationales -->
+    <string name="rationale_location">We use location to provide relevant insights like nearby places and context-aware assistance.</string>
+    <string name="rationale_media_t">We analyze gallery images locally to surface insights on spend patterns, habits, and wellness. On Android 13+, we only request Images permission.</string>
+    <string name="rationale_media_pre_t">We analyze gallery images locally to surface insights on spend patterns, habits, and wellness. On Android 12 and below, we require storage read access.</string>
+    <string name="label_opt_in">Opt in</string>
+    <string name="settings_permissions_cta">Manage app permissions in the Permissions Center.</string>
+    <string name="summary_permission_location_short">Enable context-aware assistance by granting location access.</string>
+    <string name="summary_permission_media_short">Allow image access for local insights; no cloud upload.</string>
+    <string name="rationale_media_t_sub">Android 13+: Grant Images only (no full storage access).</string>
+    <string name="rationale_media_pre_t_sub">Android 12 and below: Grant storage read access for image analysis.</string>
+    <string name="rationale_sms_optional">With your explicit consent, we can analyze messages locally to detect transaction summaries for spend insights. This is optional.</string>
+    <string name="summary_permission_sms_short">Optional: analyze messages locally to extract transaction summaries for spend insights. Disabled by default.</string>
+
+    <!-- Misc -->
+    <string name="label_permission_status">Status: %1$s</string>
+    <string name="permissions_sms_optional_note">SMS access is optional and only requested after your explicit opt‑in.</string>
+
+    <!-- Accessibility and content descriptions -->
+    <string name="cd_btn_manage_location">Manage Location permission</string>
+    <string name="cd_btn_manage_media">Manage Media permission</string>
+    <string name="cd_btn_manage_sms">Manage SMS permission</string>
+    <string name="cd_sms_opt_in_toggle">Toggle SMS opt-in</string>
+    <string name="permissions_tip_denied_permanently">Tip: If a permission shows Denied (don’t ask again), use “Open System Settings” to grant it.</string>
+    <string name="permissions_sms_optional_note">SMS analysis is optional, requires explicit opt-in, and is processed locally to respect your privacy.</string>
+    <string name="permissions_sms_optin_explainer">Note: SMS is fully optional. You can enable it later via Permissions Center if you change your mind.</string>
+    <string name="settings_permissions_cta">Manage detailed permissions in the Permissions Center</string>
+    <string name="settings_open_system_settings">Open System Settings</string>
+    <string name="open_permissions_help">Learn more about permissions</string>
+    <string name="settings_perm_status_header">Current permission status</string>
+    <string name="settings_perm_status_header_short">Permission status</string>
+    <string name="settings_perm_location_label">Location</string>
+    <string name="settings_perm_media_label">Media &amp; Gallery</string>
+    <string name="settings_perm_sms_label">SMS (optional)</string>
+
+    <!-- Accessibility content descriptions -->
+    <string name="cd_permissions_center_title">Permissions Center title</string>
+    <string name="cd_dashboard_permissions_hint">Dashboard permissions hint</string>
+    <string name="dashboard_permissions_hint_help">Tap to open Permissions Center and review or update app permissions.</string>
+</resources>
+    <string name="label_sms_opt_in">Opt in</string>
+    <string name="summary_permission_location">Location access enables context-aware assistance (nearby places, reminders).</string>
+    <string name="summary_permission_media">Media access lets the app analyze photos locally for insights (spend, habits, wellness).</string>
+    <string name="summary_permission_sms">SMS analysis is optional; with opt-in, messages are analyzed locally for transaction summaries.</string>
+    <string name="summary_permission_location_short">Enable context-aware assistance by granting location access.</string>
+    <string name="summary_permission_media_short">Allow image access for local insights; no cloud upload.</string>
+    <string name="label_opt_in">Opt in</string>
+    <string name="settings_placeholder">Basic settings placeholder</string>
+    <string name="dashboard_welcome">Welcome! Ocean Professional theme is active.</string>
+    <string name="dashboard_open_permissions_center">Open Permissions Center</string>
+    <string name="dashboard_permissions_hint">Manage app permissions for best experience (Location, Media, optional SMS).</string>
+    <string name="deeplink_label_permissions_center">Permissions Center</string>
+    <string name="label_open_app_settings">Open App Settings</string>
+    <string name="settings_basic_placeholder">Basic settings placeholder</string>
+    <string name="dashboard_welcome">Welcome! Ocean Professional theme is active.</string>
+    <string name="settings_basic_subtitle">Basic settings placeholder</string>
+
+    <!-- Dashboard helper strings -->
+    <string name="dashboard_welcome">Welcome! Ocean Professional theme is active.</string>
+    <string name="dashboard_permissions_hint">Tip: Manage app permissions anytime in the Permissions Center.</string>
+    <string name="nav_permissions_center">Permissions</string>
+
+    <!-- Permissions Help -->
+    <string name="title_permissions_help">About Permissions</string>
+    <string name="help_permissions_body">This app requests access to your location and media to provide personalized insights. Analysis happens locally on your device whenever possible. You can manage permissions any time from the Permissions Center or the system Settings.</string>
+
+    <!-- Additional summaries and content descriptions used by Permissions Center -->
+    <string name="summary_permission_location_short">Used to add context to insights based on where you are.</string>
+    <string name="summary_permission_media_short">Used to analyze gallery images locally for wellness and spend insights.</string>
+    <string name="permissions_tip_denied_permanently">If a permission is permanently denied, use \"Open System Settings\" to grant it.</string>
+
+    <!-- Content descriptions for manage buttons -->
+    <string name="cd_btn_manage_location">Manage Location permission</string>
+    <string name="cd_btn_manage_media">Manage Media permission</string>
+    <string name="cd_btn_manage_sms">Manage SMS permission</string>
+
+    <!-- Labels -->
+    <string name="label_opt_in">Opt in</string>
+    <string name="cd_menu_help">Open help about permissions</string>
+    <string name="title_permissions_diagnostics">Permissions Diagnostics</string>
 </resources>

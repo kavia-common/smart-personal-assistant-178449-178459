@@ -1,0 +1,9 @@
+{
+  "android_project_root": "smart-personal-assistant-178449-178459/android_flutter_frontend",
+  "modules": [
+    "app",
+    "list",
+    "utilities"
+  ],
+  "notes": "Uses Gradle Declarative (.dcl) settings; build with ./gradlew shim at repo root or enter the android_flutter_frontend directory."
+}
