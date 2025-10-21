@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title_settings"
+            android:contentDescription="@string/title_settings"
             android:textStyle="bold"
             android:textSize="20sp"
             android:accessibilityHeading="true"
@@ -33,14 +34,8 @@
             android:textColor="@color/op_text"
             android:contentDescription="@string/settings_basic_subtitle"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_open_permissions_center"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/title_permissions_center"
-            android:contentDescription="@string/nav_permissions_center" />
+        <include
+            layout="@layout/include_permissions_center_row" />
 
         <TextView
             android:id="@+id/permissions_center_cta"
@@ -48,8 +43,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="@string/settings_permissions_cta"
-            android:contentDescription="@string/settings_permissions_cta"
+            android:contentDescription="@string/settings_permissions_cta_detail"
             android:textColor="@color/op_text"/>
+
+        <include
+            layout="@layout/include_permissions_center_row" />
 
         <TextView
             android:id="@+id/permissions_status_header"
@@ -89,6 +87,14 @@
             android:contentDescription="@string/settings_perm_status_header"
             android:textColor="@color/op_text"/>
 
+        <TextView
+            android:id="@+id/permissions_status_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_perm_status_caption"
+            android:contentDescription="@string/settings_perm_status_caption"
+            android:textColor="@color/op_text"/>
+
         <LinearLayout
             android:id="@+id/permissions_status_list"
             android:layout_width="match_parent"
@@ -101,21 +107,48 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/settings_perm_location_label"
+                android:contentDescription="@string/settings_perm_location_label"
                 android:textColor="@color/op_text"/>
+            <TextView
+                android:id="@+id/perm_status_location_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/summary_permission_location_short"
+                android:contentDescription="@string/summary_permission_location_short"
+                android:textColor="@color/op_text"
+                android:layout_marginTop="2dp"/>
 
             <TextView
                 android:id="@+id/perm_status_media"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/settings_perm_media_label"
+                android:contentDescription="@string/settings_perm_media_label"
                 android:textColor="@color/op_text"/>
+            <TextView
+                android:id="@+id/perm_status_media_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/summary_permission_media_short"
+                android:contentDescription="@string/summary_permission_media_short"
+                android:textColor="@color/op_text"
+                android:layout_marginTop="2dp"/>
 
             <TextView
                 android:id="@+id/perm_status_sms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/settings_perm_sms_label"
+                android:contentDescription="@string/settings_perm_sms_label"
                 android:textColor="@color/op_text"/>
+            <TextView
+                android:id="@+id/perm_status_sms_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/summary_permission_sms_short"
+                android:contentDescription="@string/summary_permission_sms_short"
+                android:textColor="@color/op_text"
+                android:layout_marginTop="2dp"/>
         </LinearLayout>
 
         <TextView

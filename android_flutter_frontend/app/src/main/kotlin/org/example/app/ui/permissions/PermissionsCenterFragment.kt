@@ -1,19 +1,12 @@
-/*
- * PermissionsCenterFragment: central screen to view and manage runtime permissions.
- */
 package org.example.app.ui.permissions
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Switch
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
 import com.google.android.material.button.MaterialButton
 import org.example.app.R
 import org.example.app.core.permissions.PermissionsManager
@@ -22,7 +15,7 @@ import org.example.app.core.permissions.PermissionsManager
  * PUBLIC_INTERFACE
  * Permissions Center screen lists current permission states with actions to request
  * or open system settings when permanently denied. Also includes optional SMS opt-in switch.
- * Exposes actionable UI for Location, Media, and optional SMS permissions and links to help.
+ * Exposes actionable UI for Location, Media, and optional SMS permissions.
  */
 class PermissionsCenterFragment : Fragment() {
 
@@ -39,11 +32,6 @@ class PermissionsCenterFragment : Fragment() {
     private lateinit var smsAction: MaterialButton
     private lateinit var smsOptIn: Switch
     private lateinit var smsRationale: TextView
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setHasOptionsMenu(true)
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -83,21 +71,6 @@ class PermissionsCenterFragment : Fragment() {
 
         setupActions()
         bindStates()
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.permissions_center_menu, menu)
-        super.onCreateOptionsMenu(menu, inflater)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.menu_help -> {
-                findNavController().navigate(R.id.permissionsHelpFragment)
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 
     private fun setupActions() {

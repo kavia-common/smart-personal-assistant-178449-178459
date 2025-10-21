@@ -1,52 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@color/op_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:tag="test:permissions_diagnostics_root">
+    android:padding="16dp">
 
-    <LinearLayout
-        android:padding="16dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/diag_title"
-            android:text="Permissions Diagnostics"
-            android:contentDescription="Permissions Diagnostics"
-            android:textStyle="bold"
-            android:textColor="@color/op_text"
-            android:textSize="18sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:accessibilityHeading="true"/>
-
-        <TextView
-            android:id="@+id/diag_loc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/op_text"
-            android:layout_marginTop="8dp"
-            android:text="Location: ..."
-            android:contentDescription="Location permission status" />
-
-        <TextView
-            android:id="@+id/diag_med"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/op_text"
-            android:layout_marginTop="4dp"
-            android:text="Media: ..."
-            android:contentDescription="Media permission status" />
-
-        <TextView
-            android:id="@+id/diag_sms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/op_text"
-            android:layout_marginTop="4dp"
-            android:text="SMS: ..."
-            android:contentDescription="SMS permission status" />
-    </LinearLayout>
-</ScrollView>
+    <TextView
+        android:id="@+id/diag_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_permissions_diagnostics"
+        android:textColor="@color/op_text"
+        android:textSize="18sp" />
+</FrameLayout>

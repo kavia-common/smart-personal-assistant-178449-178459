@@ -1,0 +1,10 @@
+android:
+  project_root: android_flutter_frontend
+  gradle:
+    settings: android_flutter_frontend/settings.gradle.dcl
+    wrapper_unix: android_flutter_frontend/gradlew
+    wrapper_windows: android_flutter_frontend/gradlew.bat
+  modules:
+    - :app
+    - :utilities
+    - :list

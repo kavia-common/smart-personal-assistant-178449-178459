@@ -1,3 +1,10 @@
-rootProject.name = "smart-personal-assistant"
-gradle.startParameter.currentDir = new File(rootDir, "android_flutter_frontend")
-apply from: new File(rootDir, "android_flutter_frontend/settings.gradle.dcl")
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = "smart-personal-assistant-monorepo"
+
+includeBuild("android_flutter_frontend")

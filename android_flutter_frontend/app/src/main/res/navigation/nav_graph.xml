@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- App Navigation Graph for org.example.app
-     Note: The project uses a nested Gradle structure; Android root is android_flutter_frontend.
-     Destinations:
-       - dashboardFragment (start)
-       - insightsFragment
-       - settingsFragment (action to permissionsCenterFragment)
-       - permissionsCenterFragment (deep link + help)
-       - permissionsHelpFragment
-       - permissionsDiagnosticsFragment (dev only)
--->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/dashboardFragment"
-    tools:context="org.example.app.MainActivity">
+    app:startDestination="@id/dashboardFragment">
 
-    <!-- Dashboard is the start destination; provides quick entry to Permissions Center -->
     <fragment
         android:id="@+id/dashboardFragment"
         android:name="org.example.app.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard" >
-        <!-- Action used by Dashboard hint card to open Permissions Center -->
         <action
             android:id="@+id/action_dashboard_to_permissionsCenter"
             app:destination="@id/permissionsCenterFragment" />
@@ -36,42 +22,13 @@
         android:id="@+id/settingsFragment"
         android:name="org.example.app.ui.settings.SettingsFragment"
         android:label="@string/title_settings" >
-        <!-- Settings -> Permissions Center -->
         <action
             android:id="@+id/action_settings_to_permissionsCenter"
             app:destination="@id/permissionsCenterFragment" />
     </fragment>
 
-    <!-- Permissions Center destination, reachable from bottom navigation and Settings -->
     <fragment
         android:id="@+id/permissionsCenterFragment"
         android:name="org.example.app.ui.permissions.PermissionsCenterFragment"
-        android:label="@string/title_permissions_center"
-        tools:ignore="UnusedNavigation">
-        <deepLink
-            android:id="@+id/deeplink_permissions_center"
-            app:uri="app://org.example.app/permissions-center" />
-        <!-- From Permissions Center to brief help screen -->
-        <action
-            android:id="@+id/action_permissionsCenter_to_help"
-            app:destination="@id/permissionsHelpFragment" />
-    </fragment>
-
-    <!-- Simple static help screen for permissions -->
-    <fragment
-        android:id="@+id/permissionsHelpFragment"
-        android:name="org.example.app.ui.permissions.PermissionsHelpFragment"
-        android:label="@string/title_permissions_help"
-        tools:ignore="UnusedNavigation" >
-        <action
-            android:id="@+id/action_permissionsHelp_to_permissionsCenter"
-            app:destination="@id/permissionsCenterFragment" />
-    </fragment>
-
-    <!-- Developer diagnostics (not linked in UI) -->
-    <fragment
-        android:id="@+id/permissionsDiagnosticsFragment"
-        android:name="org.example.app.ui.diagnostics.PermissionsDiagnosticsFragment"
-        android:label="@string/title_permissions_diagnostics"
-        tools:ignore="UnusedNavigation" />
+        android:label="@string/title_permissions_center" />
 </navigation>

@@ -1,0 +1,25 @@
+{
+  "androidProjectRoot": "android_flutter_frontend",
+  "modules": [
+    {
+      "name": ":app",
+      "path": "android_flutter_frontend/app",
+      "type": "application"
+    },
+    {
+      "name": ":utilities",
+      "path": "android_flutter_frontend/utilities",
+      "type": "library"
+    },
+    {
+      "name": ":list",
+      "path": "android_flutter_frontend/list",
+      "type": "library"
+    }
+  ],
+  "settingsFile": "android_flutter_frontend/settings.gradle.dcl",
+  "gradleWrapper": {
+    "unix": "android_flutter_frontend/gradlew",
+    "windows": "android_flutter_frontend/gradlew.bat"
+  }
+}

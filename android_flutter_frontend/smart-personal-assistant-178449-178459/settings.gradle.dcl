@@ -9,7 +9,6 @@ plugins {
     id("org.gradle.experimental.android-ecosystem").version("0.1.43")
 }
 
-rootProject.name = "smart-personal-assistant-root-shim"
+rootProject.name = "example-android-app-monorepo-root"
 
-// Delegate to the actual Android project located under android_flutter_frontend
-apply(from = file("android_flutter_frontend/settings.gradle.dcl"))
+includeBuild("android_flutter_frontend")

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd android_flutter_frontend
+exec ./gradlew "$@"

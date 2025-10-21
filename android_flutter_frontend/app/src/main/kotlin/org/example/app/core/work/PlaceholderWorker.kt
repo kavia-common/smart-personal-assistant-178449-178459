@@ -7,11 +7,16 @@ import kotlinx.coroutines.delay
 
 /**
  * PUBLIC_INTERFACE
- * Placeholder Worker used as a stub until concrete background tasks are implemented.
+ * Placeholder worker that simulates minimal background work.
+ * Replace with real media/message analysis tasks in future steps.
  */
-class PlaceholderWorker(appContext: Context, params: WorkerParameters) : CoroutineWorker(appContext, params) {
+class PlaceholderWorker(
+    appContext: Context,
+    params: WorkerParameters
+) : CoroutineWorker(appContext, params) {
+
     override suspend fun doWork(): Result {
-        // Simulate minimal background work; replace with real logic in later steps.
+        // Simulate light work
         delay(100)
         return Result.success()
     }

@@ -38,13 +38,21 @@ class SettingsFragment : Fragment() {
 
         permissionsManager = PermissionsManager(requireContext())
 
-        // Navigate to Permissions Center
+        // Navigate to Permissions Center (button)
         view.findViewById<MaterialButton?>(R.id.btn_open_permissions_center)?.setOnClickListener {
             findNavController().navigate(R.id.action_settings_to_permissionsCenter)
         }
-        // Navigate to Permissions Help
+        // Navigate to Permissions Center (row include)
+        view.findViewById<View?>(R.id.row_permissions_center)?.setOnClickListener {
+            findNavController().navigate(R.id.action_settings_to_permissionsCenter)
+        }
+        // Navigate to Permissions Help (optional; guarded in case destination is not present)
         view.findViewById<MaterialButton?>(R.id.btn_open_permissions_help)?.setOnClickListener {
-            findNavController().navigate(R.id.permissionsHelpFragment)
+            val nav = findNavController()
+            val destId = resources.getIdentifier("permissionsHelpFragment", "id", requireContext().packageName)
+            if (destId != 0) {
+                nav.navigate(destId)
+            }
         }
         // Open system settings for the app (permissions management)
         view.findViewById<MaterialButton?>(R.id.btn_open_system_settings)?.setOnClickListener {

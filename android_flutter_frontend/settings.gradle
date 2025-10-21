@@ -1,2 +1,13 @@
-rootProject.name = "root-delegate-android"
-println("Delegating to Android project at smart-personal-assistant-178449-178459/android_flutter_frontend")
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "example-android-app"
+
+include(":app")
+include(":utilities")
+include(":list")

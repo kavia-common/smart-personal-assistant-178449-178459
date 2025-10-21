@@ -1,0 +1,12 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task printProjectInfo {
+    doLast {
+        println("Detected Android project root at android_flutter_frontend with modules: :app, :list, :utilities")
+    }
+}

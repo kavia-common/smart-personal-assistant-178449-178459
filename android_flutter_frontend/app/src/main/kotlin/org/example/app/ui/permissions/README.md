@@ -1,15 +1,10 @@
-# Permissions UI Package
+# Permissions Center UI
 
-Screens
-- PermissionsCenterFragment: Centralized management of Location, Media, and optional SMS permissions.
-- PermissionsHelpFragment: Quick reference and guidance for managing permissions and resolving denied states.
+Fragments:
+- PermissionsCenterFragment: Main screen listing Location, Media, optional SMS with statuses and actions.
+- PermissionsHelpFragment: Simple help page.
+- (Dev) PermissionsDiagnosticsFragment: Diagnostics page (not linked in UI).
 
-Key UX flows
-- Shows status (Granted/Denied/Permanently Denied/Not Requested)
-- Requests runtime permissions with Activity Result APIs
-- Links to system App Settings when permanently denied
-- Optional SMS is gated behind explicit in-app opt-in
-
-Notes
-- Titles are set onResume for consistent app bar behavior.
-- Media rationale text updates dynamically based on SDK version.
+Navigation:
+- Settings -> Permissions Center (`action_settings_to_permissionsCenter`)
+- Optional deep link: `app://org.example.app/permissions-center`

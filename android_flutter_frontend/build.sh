@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
+# Helper script to run Gradle build from the nested Android project root
 set -euo pipefail
-# Build helper: run from android module root
-exec ./gradlew :app:assembleDebug
+exec ./gradlew build

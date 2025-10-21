@@ -1,10 +1,6 @@
 # core.permissions
 
-Centralized runtime permissions handling.
+Centralized runtime permissions management for the app.
 
-- PermissionsManager: checks, requests, and persists opt-ins (temporary SharedPreferences; migrate to DataStore in Step 03).
-- PermissionGroups: constants for logging/analytics and UI tagging.
-
-Used by:
-- UI: PermissionsCenterFragment
-- Future: workers and services that need permission-aware behavior.
+- PermissionsManager: SDK-aware permission mapping, status, request launcher, and opt-in persistence (SharedPreferences; migrate to DataStore in Step 03).
+- Groups covered: Location, Media/Images (Android 13+), legacy storage (pre-33), optional SMS (behind explicit opt-in).

@@ -8,10 +8,10 @@ import androidx.fragment.app.Fragment
 import org.example.app.R
 
 /**
- * PUBLIC_INTERFACE
- * A simple static help screen explaining why permissions are requested,
- * where to manage them, and privacy assurances.
+ * A simple help screen explaining why permissions are requested and how they are used.
+ * Links back from nav_graph via action_permissionsHelp_to_permissionsCenter.
  */
+// PUBLIC_INTERFACE
 class PermissionsHelpFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -3,23 +3,17 @@
     <item
         android:id="@+id/dashboardFragment"
         android:title="@string/title_dashboard"
-        android:icon="@android:drawable/ic_menu_view"
-        android:contentDescription="@string/title_dashboard" />
+        android:icon="@android:drawable/ic_menu_view" />
     <item
         android:id="@+id/insightsFragment"
         android:title="@string/title_insights"
-        android:icon="@android:drawable/ic_menu_week"
-        android:contentDescription="@string/title_insights" />
+        android:icon="@android:drawable/ic_menu_week" />
     <item
         android:id="@+id/settingsFragment"
         android:title="@string/title_settings"
-        android:icon="@android:drawable/ic_menu_preferences"
-        android:contentDescription="@string/title_settings" />
-    <!-- Quick access to Permissions Center -->
+        android:icon="@android:drawable/ic_menu_preferences" />
     <item
-        android:id="@+id/permissionsCenterFragment"
+        android:id="@+id/action_dashboard_to_permissionsCenter"
         android:title="@string/title_permissions_center"
-        android:icon="@android:drawable/ic_menu_manage"
-        android:visible="true"
-        android:contentDescription="@string/title_permissions_center" />
+        android:icon="@android:drawable/ic_menu_info_details" />
 </menu>

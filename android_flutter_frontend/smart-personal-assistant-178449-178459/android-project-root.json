@@ -1,6 +1,3 @@
 {
-  "android_project_root": "android_flutter_frontend",
-  "gradle_settings_file": "android_flutter_frontend/settings.gradle.dcl",
-  "modules": ["app", "list", "utilities"],
-  "notes": "Project uses Gradle 9 Declarative DSL (.dcl). Use ./android_flutter_frontend/gradlew to build, e.g., :app:assembleDebug."
+  "root": "android_flutter_frontend"
 }

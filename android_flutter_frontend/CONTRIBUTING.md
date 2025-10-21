@@ -1,21 +1,19 @@
-# Contributing and Local Build Notes
+# Contributing
 
-Project root (for Gradle): `smart-personal-assistant-178449-178459/android_flutter_frontend`
+This repository contains a nested Android Gradle project.
 
-Common commands:
-- Build all modules: `./gradlew build`
-- Install debug APK: `./gradlew :app:installDebug`
-- Clean: `./gradlew clean`
+Android project root:
+- android_flutter_frontend/
+
+Key commands (run from android_flutter_frontend):
+- ./gradlew tasks
+- ./gradlew assembleDebug
+- ./gradlew build
+
+If your tool cannot detect the Gradle root automatically, set working directory to:
+smart-personal-assistant-178449-178459/android_flutter_frontend
 
 Modules:
-- App module: `app/`
-- Libraries: `utilities/`, `list/`
-
-Navigation graph: `app/src/main/res/navigation/nav_graph.xml`  
-Manifest: `app/src/main/AndroidManifest.xml`
-
-Gradle uses Declarative DSL (.dcl) files:
-- Root settings: `settings.gradle.dcl`
-- Module builds: `*/build.gradle.dcl`
-
-Note: If tooling cannot infer the project root automatically, configure it to the path above.
+- :app
+- :utilities
+- :list

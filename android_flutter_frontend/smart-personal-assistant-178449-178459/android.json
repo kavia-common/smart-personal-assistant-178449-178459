@@ -1,0 +1,13 @@
+{
+  "android_project_root": "smart-personal-assistant-178449-178459/android_flutter_frontend",
+  "gradle_settings": "smart-personal-assistant-178449-178459/android_flutter_frontend/settings.gradle.dcl",
+  "wrapper": {
+    "unix": "smart-personal-assistant-178449-178459/android_flutter_frontend/gradlew",
+    "windows": "smart-personal-assistant-178449-178459/android_flutter_frontend/gradlew.bat"
+  },
+  "modules": [
+    ":app",
+    ":utilities",
+    ":list"
+  ]
+}

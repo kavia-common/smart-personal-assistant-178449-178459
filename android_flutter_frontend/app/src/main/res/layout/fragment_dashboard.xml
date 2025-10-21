@@ -35,6 +35,7 @@
                 android:padding="16dp"
                 android:text="@string/dashboard_welcome"
                 android:contentDescription="@string/dashboard_welcome"
+                android:importantForAccessibility="yes"
                 android:textColor="@color/op_text" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -52,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:padding="16dp"
                 android:text="@string/dashboard_permissions_hint"
-                android:contentDescription="@string/dashboard_permissions_hint"
+                android:contentDescription="@string/dashboard_permissions_hint_help"
                 android:importantForAccessibility="yes"
                 android:tag="test:permissions_hint_text"
                 android:textColor="@color/op_text" />

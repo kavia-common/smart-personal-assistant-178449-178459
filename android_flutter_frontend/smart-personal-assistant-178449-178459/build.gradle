@@ -1,19 +1,7 @@
-// Discovery-only Gradle build file at repository root.
-// The actual Android project configuration lives under android_flutter_frontend/ (Declarative Gradle DSL).
-// This file exists to help analyzers/CI recognize a Gradle project structure.
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
+plugins {
+    // empty: this root delegates to the nested android project
 }
 
-task("helpAndroid") {
-    group = "help"
-    description = "Shows Android project root and how to build with the proper wrapper."
-    doLast {
-        println("Android project root: android_flutter_frontend/")
-        println("Use wrapper: ./android_flutter_frontend/gradlew -p android_flutter_frontend build")
-    }
+gradle.beforeProject {
+    logger.lifecycle("Delegating Gradle build to nested Android project under android_flutter_frontend")
 }

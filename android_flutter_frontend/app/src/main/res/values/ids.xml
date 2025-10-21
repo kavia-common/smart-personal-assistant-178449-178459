@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Stable IDs for potential UI tests and accessibility hooks -->
+    <item name="test_id_permissions_center_root" type="id"/>
+    <item name="test_id_permissions_help_root" type="id"/>
+    <item name="test_id_permissions_diag_root" type="id"/>
+</resources>

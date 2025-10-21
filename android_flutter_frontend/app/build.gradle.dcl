@@ -1,4 +1,5 @@
 androidApplication {
+    // Namespace aligned with Kotlin packages and manifest FQCNs
     namespace = "org.example.app"
 
     dependencies {
